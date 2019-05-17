@@ -11,5 +11,10 @@ class Airport
   end
   def takeoff
     @store.pop
+    #if 
+      #@store == 0
+    return "Plane is no longer in the airport"
+   
+  
   end
 end

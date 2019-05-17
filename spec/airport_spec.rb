@@ -22,4 +22,14 @@ describe Airport do
       expect(airport.store.length).to eq(0)
     }
   end
-end
+
+  describe 'confirm the plane is no longer in the airport' do
+    it {
+      plane = Plane.new
+      airport = Airport.new
+      airport.land_plane(plane)
+      airport.takeoff
+      expect(airport.takeoff).to eq("Plane is no longer in the airport")
+    }
+  end
+  end
