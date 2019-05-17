@@ -7,9 +7,9 @@ describe Airport do
     #arrange
     airport = Airport.new
     plane = Plane.new
-   
+    airport.land_plane(plane)
     #assert
-    expect(airport).to respond_to(:land_plane)
+    expect(airport.store.length).to eq(1)
     }
   end
 end
