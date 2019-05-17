@@ -9,4 +9,7 @@ class Airport
   def land_plane(plane)
     @store.push(plane)
   end
+  def takeoff
+    @store.pop
+  end
 end
